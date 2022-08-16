@@ -19,7 +19,21 @@ input {
     border-radius: 4px;
 }
 
-#game-config {}
+#error-handling {
+    border-color: rgb(136, 2, 2);
+    color: rgb(136, 2, 2);
+    margin-bottom: 0.5rem;
+}
+
+.input-error-style {
+    border-color: rgb(136, 2, 2);
+    color: rgb(136, 2, 2);
+    background-color: rgb(253, 219, 219);
+}
+
+.label-error-style {
+    color: rgb(136, 2, 2);
+}
 
 #game-config ul {
     list-style: none;

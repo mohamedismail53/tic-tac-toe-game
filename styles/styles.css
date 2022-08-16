@@ -1,28 +1,3 @@
-.row-grid {
-    display: flex;
-    justify-content: center;
-}
-
-#game-grid p {
-    margin-bottom: 1rem;
-}
-
-.row-grid div {
-    background-color: rgb(193, 198, 194);
-    color: white;
-    width: 100px;
-    height: 100px;
-    margin: 0.25rem;
-}
-
-.row-grid div:hover {
-    background-color: rgb(35, 41, 78);
-}
-
-#who-win {
-    display: none;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -30,7 +5,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: #F7F8F8;
     text-align: center;
 }
 

@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/overlay.css">
     <link rel="stylesheet" href="styles/game-config.css">
     <link rel="stylesheet" href="styles/active-game.css">
+
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+
     <title>Tic Tac Toe</title>
 </head>
 
@@ -27,8 +34,9 @@
             <form>
                 <label for="player-name">Player name</label>
                 <input type="text" name="playername" id="player-name" required>
-                <button type="reset" class="btn-alt">Cancel</button>
-                <button type="submit" class="btn">Confirm</button>
+                <p id="error-handling"></p>
+                <button type="reset" class="btn-alt" id="cancel-btn">Cancel</button>
+                <button type="submit" class="btn" id="confirm-btn">Confirm</button>
             </form>
         </aside>
         <section id="game-config">
@@ -36,21 +44,21 @@
                 <li>
                     <article>
                         <h2>Player 1</h2>
-                        <h3>PLAYNAME</h3>
+                        <h3 id="player-1-name">PLAYNAME</h3>
                         <p class="player-icon">X</p>
-                        <button class="btn-alt">Edit</button>
+                        <button class="btn-alt" id="player1-edit-btn" data-playerid="1">Edit</button>
                     </article>
                 </li>
                 <li>
                     <article>
                         <h2>Player 2</h2>
-                        <h3>PLAYERNAME</h3>
+                        <h3 id="player-2-name">PLAYERNAME</h3>
                         <p class="player-icon">O</p>
-                        <button class="btn-alt">Edit</button>
+                        <button class="btn-alt" id="player2-edit-btn" data-playerid="2">Edit</button>
                     </article>
                 </li>
             </ul>
-            <button class="btn">Start New Game</button>
+            <button class="btn" id="start-game-btn">Start New Game</button>
         </section>
         <section id="active-game">
             <article>
