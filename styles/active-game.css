@@ -1,0 +1,66 @@
+#active-game article {
+    background-color: rgb(16, 22, 63);
+    width: 50rem;
+    padding: 2rem 3rem;
+    margin: 3rem auto 2rem auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
+    display: none;
+}
+
+#active-game p {
+    font-size: 1.5rem;
+    margin: 4rem 0 1rem 0
+}
+
+#active-game p span {
+    font-weight: bold;
+}
+
+#active-game article h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+#active-game article p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#active-player-name {
+    font-weight: bold;
+}
+
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+    gap: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+ol li {
+    display: flex;
+    background-color: rgb(193, 198, 194);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ol li:hover {
+    background-color: rgb(35, 41, 78);
+    color: white;
+}
+
+.disabled {
+    background-color: rgb(35, 41, 78);
+    color: white;
+    cursor: default;
+}
