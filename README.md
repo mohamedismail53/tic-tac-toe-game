@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" height="300" src="https://github.com/mohamedismail53/tic-tac-toe-game/blob/main/screenshots/xo.png">
+  <img width="500" height="500" src="https://github.com/mohamedismail53/tic-tac-toe-game/blob/main/screenshots/xo.png">
 </p>
 
 
