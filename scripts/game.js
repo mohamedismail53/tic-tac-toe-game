@@ -83,7 +83,7 @@ function selectGameField(event) {
     }
 
     if (gameOver) {
-        console.log('hhhhh');
+        console.log('game is over');
         return;
     }
 
